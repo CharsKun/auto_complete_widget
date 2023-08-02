@@ -144,7 +144,7 @@ class _AutoCompleteWithBaseModelState extends State<AutoCompleteWithBaseModel> {
                           itemBuilder: (BuildContext context, int index) {
                             final option = options.elementAt(index);
                             return InkWell(
-                              hoverColor: Theme.of(context).primaryColor,
+                              hoverColor: Theme.of(context).primaryColor.withOpacity(0.3),
                               onTap: () {
                                 onSelected(option);
                               },
