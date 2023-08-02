@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 import 'base_auto_complete_model.dart';
 
-
 class AutoCompleteWithBaseModel extends StatefulWidget {
   final bool isMobile;
   final String label;
@@ -145,7 +144,7 @@ class _AutoCompleteWithBaseModelState extends State<AutoCompleteWithBaseModel> {
                           itemBuilder: (BuildContext context, int index) {
                             final option = options.elementAt(index);
                             return InkWell(
-                              hoverColor: primary.shade300,
+                              hoverColor: Theme.of(context).primaryColor,
                               onTap: () {
                                 onSelected(option);
                               },
